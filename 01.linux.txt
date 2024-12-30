@@ -1,0 +1,95 @@
+01. linux tutorial (basics)
+introduction to the linux terminal, navigating directories, making and deleting folders
+
+open the linux terminal (the terminal is known as the shell)
+in windows the shell is usually called the "command prompt"
+but in linux we refer to this as the terminal 
+
+you can exit the terminal by typing the command 
+exit 
+try this command to exit the terminal 
+
+by default the linux terminal opens to your home directory
+
+/home/your_profile_name
+
+a directory (linux) is the same as a folder 
+
+the / is known as the root directory 
+each folder is seperated by a / (forward slash) 
+in windows folders are seperated by a \ (back slash) instead
+
+on a linux system, your desktop is :
+/home/your_profile_name/Desktop
+
+linux directory paths are case sensitive 
+
+at any point you can find your current directry with the command
+  pwd
+pwd is short for print working directory 
+
+you can see the contents of the current directory by typing
+  ls 
+ls is short for list, as in list the contents of the current directory 
+
+type the pwd command to see the current directory you are in
+type the ls command to see the contents of your current directory
+the output is color coded to seperate folders and various types of files
+note the color used on your system for folders 
+
+you can change directory by the cd command followed by the path of the directory you 
+want to navigate to
+
+ cd <followed by the directory path>
+cd is short for change directory 
+
+a directory path can be relative or absolute
+/home/profile_name/Downloads would be an example of an absolute (or full) path
+
+if you are already in /home/profile_name you can change to your Desktop folder
+by typing
+cd Desktop
+this would be an example of a relative path
+
+the command cd by itself will take you to your home directory
+cd .. 
+the two dots means the parent directory 
+if you are in /home/profile_name/Desktop and you type in cd ..
+it should take you to /home/profile_name
+if you again type cd ..
+it should take you to /home
+if you again type cd ..
+it should take you to /
+.. means the parent directory
+. means the current directory 
+
+cd .. goes one folder up
+cd ../.. goes two folders up
+cd ../../.. goes three folders up etc
+
+now change to your home directory
+type pwd to make sure you are in the home directory
+it should output /home/your_profile_name
+
+you can make a directory by the following command
+mkdir <folder_name>
+
+make a folder called test
+change into this folder 
+type pwd to make sure you are in the test folder you just made
+it should output /home/your_profile_name/test
+
+navigate to your Desktop directory
+make a directory on your Desktop called test2
+do an ls to make sure the directory is showing
+also you can check your Desktop to confirm the directory 'test2' is showing
+
+you can remove a directory using the rm (remove) command as follows
+rm -r test2
+be careful when you use rm and other deletion commands
+because the deletion cannot be undone
+
+make a list of all the commands covered here
+type a command name followed by --help to see the help file for the command
+for example
+pwd --help

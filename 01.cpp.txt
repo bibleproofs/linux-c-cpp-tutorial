@@ -1,0 +1,83 @@
+- - - listing 01a
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "DOXA TO THEO+++";
+  cout << endl;
+  cout << "Glory Forever!";
+  cout << endl;
+  return 0;
+}
+- - -
+
+note the #include <iostream> is how we make use of the input output library
+iostream is the name of the c++ library for input and output
+we need the iostream library to use the cout function
+the cout function is used to print (output) 
+cout stands for 'console out'
+in c, the standard function we use is printf() 
+printf uses a different and more complex syntax
+printf is part of the "stdio.h" standard c library file
+
+- - - listing 01b - - - 
+this is the smallest program in c / c++
+
+int main() {
+  return 0;
+}
+
+- - - 
+
+it will work the same even if change it to the following
+
+- - - listing 01c - - -
+main() {
+}
+
+- - -
+note: most compilers will give you warning about the ommitted portion(s)
+but the program will still compile 
+- - -
+every c and c++ program should contain a function called main
+most programs will consist of many functions
+functions are one of the building blocks of programming
+
+funtion_name() {
+  // function body goes here 
+}
+
+functions return a value unless they are specified as a void function
+void function_name() {
+}
+
+// two forward slashes denote a single line comment
+comments are for human consumption and are ignored by the compiler
+
+- - -
+make a directory on your Desktop folder called cpp-tutorial
+create a file called doxa.cpp by using the touch command
+touch doxa.cpp
+if you do an ls you should now see the doxa.cpp file
+you can edit a text file using the nano text editor
+nano <name of file>
+in this case we want to do 
+nano doxa.cpp
+type in listing1a source code
+save the file with a control-x and answer y to the prompt to save
+now compile the file as follows from the terminal
+gcc -o doxa doxa.cpp -lstdc++
+gcc -o <name of executable> <name of source file> -lstdc++
+the -o specifies the output file name
+
+this will create an executable (same as binary) file called doxa
+you can execute (run) doxa by typing :
+./doxa 
+remember . specifices the current directory
+./doxa specifies the doxa executable file is in the current directory
+
+write and compile listing 01b. the source code should be called nothing.cpp
+and the executable should be called nothing
+
+write and comple listing 01c. the source code should be called nothing2.cpp
+and the executable should be called nothing2
